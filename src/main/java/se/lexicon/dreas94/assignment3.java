@@ -24,6 +24,12 @@ public class assignment3
                 }
                 foundNumbers = true;
             }
+
+            if(!foundNumbers)
+            {
+                System.out.print("You did something wrong, try again!\n");
+                sc.nextLine();
+            }
         }
 
         System.out.print(digit1 + " + " + digit2 + " = " + Math.round((digit1+digit2)*100)/100 + "\n" +
