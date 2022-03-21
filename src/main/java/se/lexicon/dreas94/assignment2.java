@@ -1,5 +1,5 @@
 package se.lexicon.dreas94;
-import java.util.*;
+import java.util.Scanner;
 
 public class assignment2
 {
