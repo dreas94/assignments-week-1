@@ -25,12 +25,13 @@ public class assignment4
                 System.out.print("Enter digit " + (index + 1) + ": ");
                 if (sc.hasNextDouble())
                 {
-                    digits.add(sc.nextDouble());
+                    double temp = sc.nextDouble();
+                    digits.add(temp);
                 }
                 else
                 {
                     sc.nextLine();
-                    System.out.print("Incorrect input, try again!\n");
+                    System.out.println("Incorrect input, try again!");
                     sc.nextLine();
                     break;
                 }
@@ -47,7 +48,7 @@ public class assignment4
             }
             else if(i == digits.size()-1)
             {
-                output = output.concat(" + " + digits.get(i) + ") / " + digits.size() + " = " + Math.round((result/(double)digits.size()*100))/100);
+                output = output.concat(" + " + digits.get(i) + ") / " + digits.size() + " = " + result/(double)digits.size());
             }
             else
             {
