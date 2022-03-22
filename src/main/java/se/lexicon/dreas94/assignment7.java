@@ -5,13 +5,22 @@ public class assignment7
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.print("Input seconds: ");
         int seconds = -1;
 
         while(seconds == -1)
         {
-            seconds = in.nextInt();
+            if(sc.hasNextInt())
+            {
+                seconds = sc.nextInt();
+            }
+            else
+            {
+
+                System.out.println("You did something wrong, try again!\n");
+                sc.nextLine();
+            }
         }
 
         int remainingSeconds = seconds % 60;

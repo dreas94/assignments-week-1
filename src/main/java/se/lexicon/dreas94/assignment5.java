@@ -1,6 +1,4 @@
 package se.lexicon.dreas94;
-
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class assignment5
@@ -17,7 +15,8 @@ public class assignment5
             if (sc.hasNextLine())
             {
                 userName = sc.nextLine();
-            } else
+            }
+            else
             {
                 System.out.print("You did something wrong, try again!\n");
                 sc.nextLine();
