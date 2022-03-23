@@ -1,4 +1,4 @@
-package se.lexicon.dreas94;
+package se.lexicon.dreas94.practice20220323;
 
 public class practice1
 {
